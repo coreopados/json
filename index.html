@@ -24,22 +24,22 @@
             console.log(data)
             let out = ''
             for (let i = 0; i < data.length; i++) {
-                out += '<div class="review-wrap">'
-                out += '<div class="user-review-title">' + data.title + ''
-                out += '< div class="uimage" ><span>' + data.name.slice(0, 1) + '</span></div >'
+                out += '<div class="review-wrap">';
+                out += '<div class="user-review-title">' + data.title + '';
+                out += '< div class="uimage" ><span>' + data.name.slice(0, 1) + '</span></div >';
                 if (data.score === 5) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div >'
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div >';
                 } else if (data.score === 4) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div >'
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div >';
                 } else if (data.score === 3) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span></div >'
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span></div >';
                 } else if (data.score === 2) {
-                    out += '< div class="score" ><span>*</span><span>*</span></div >'
+                    out += '< div class="score" ><span>*</span><span>*</span></div >';
                 } else if (data.score === 1) {
-                    out += '< div class="score" ><span>*</span></div >'
+                    out += '< div class="score" ><span>*</span></div >';
                 }
-                out += '</div>'
-                out += '<div class="rdesc">'+data.content+'</div></div>'
+                out += '</div>';
+                out += '<div class="rdesc">'+data.content+'</div></div>';
             }
 console.log(out)
            $('.user-review-wrapper').html(out)
