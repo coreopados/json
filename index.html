@@ -26,7 +26,7 @@
             for (var key in data.reviews) {
                 out += '<div class="review-wrap">';
                 out += '<div class="user-review-title">' + data.reviews[key]['title'] + '<br>';
-                out += '<div class="uimage"><span>' + data.reviews[key]['name'] + '</span></div><br>';
+                out += '<div class="uimage"><span>' + data.reviews[key]['name'].slice(0, 1) + '</span></div><br>';
                 if (data.reviews[key]['score'] === 5) {
                     out += '<div class="score"><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div><br>';
                 } else if (data.reviews[key]['score'] === 4) {
