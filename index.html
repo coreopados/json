@@ -21,9 +21,9 @@
 
     <script type="text/javascript">
         $.getJSON('new.json', function (data) {
-            console.log(data)
+      console.log(data.reviews)
             let out = ''
-            for (var key in data) {
+            for (var key in data.reviews) {
                 out += '<div class="review-wrap">';
                 out += '<div class="user-review-title">' + data[key]['title'] + '';
                 out += '< div class="uimage" ><span>' + data[key]['name'] + '</span></div >';
