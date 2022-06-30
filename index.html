@@ -24,19 +24,19 @@
       console.log(data.reviews)
             let out = ''
             for (var key in data.reviews) {
-                out += '<div class="review-wrap">';
-                out += '<div class="user-review-title">' + data[key]['title'] + '';
-                out += '< div class="uimage" ><span>' + data[key]['name'] + '</span></div >';
+                out += '<div class="review-wrap"><br>';
+                out += '<div class="user-review-title">' + data[key]['title'] + '<br>';
+                out += '< div class="uimage" ><span>' + data[key]['name'] + '</span></div ><br>';
                 if (data[key]['score'] === 5) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div >';
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>';
                 } else if (data[key]['score'] === 4) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div >';
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>';
                 } else if (data[key]['score'] === 3) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span></div >';
+                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span></div ><br>';
                 } else if (data[key]['score'] === 2) {
-                    out += '< div class="score" ><span>*</span><span>*</span></div >';
+                    out += '< div class="score" ><span>*</span><span>*</span></div ><br>';
                 } else if (data[key]['score'] === 1) {
-                    out += '< div class="score" ><span>*</span></div >';
+                    out += '< div class="score" ><span>*</span></div ><br>';
                 }
                 out += '</div>';
                 out += '<div class="rdesc">'+data[key]['content']+'</div></div>';
