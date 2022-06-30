@@ -21,6 +21,7 @@
 
     <script type="text/javascript">
         $.getJSON('new.json', function (data) {
+            console.log(data)
             let out = ''
             for (let i = 0; i < data.length; i++) {
                 out += '<div class="review-wrap">'
