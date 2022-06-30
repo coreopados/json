@@ -39,9 +39,12 @@
                     out += '<div class="score" ><span>*</span></div><br>';
                 }
                 out += '</div>';
-                out += '<div class="rdesc">'+data.reviews[key]['content']+'</div></div>';
+                out += '<div class="rdesc">'+data.reviews[key]['content']+'</div></div><br><br>';
+                out += '============================';
+                out += '<br><br>';
+                
             }
-console.log(out)
+
            $('.user-review-wrapper').html(out)
         })
     </script>
