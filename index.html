@@ -28,15 +28,15 @@
                 out += '<div class="user-review-title">' + data.reviews[key]['title'] + '<br>';
                 out += '< div class="uimage" ><span>' + data.reviews[key]['name'] + '</span></div ><br>';
                 if (data.reviews[key]['score'] === 5) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>';
+                    out += "< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>";
                 } else if (data.reviews[key]['score'] === 4) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>';
+                    out += "< div class="score" ><span>*</span><span>*</span><span>*</span><span>*</span></div ><br>";
                 } else if (data.reviews[key]['score'] === 3) {
-                    out += '< div class="score" ><span>*</span><span>*</span><span>*</span></div ><br>';
+                    out += "< div class="score" ><span>*</span><span>*</span><span>*</span></div ><br>";
                 } else if (data.reviews[key]['score'] === 2) {
-                    out += '< div class="score" ><span>*</span><span>*</span></div ><br>';
+                    out += "< div class="score" ><span>*</span><span>*</span></div ><br>";
                 } else if (data.reviews[key]['score'] === 1) {
-                    out += '< div class="score" ><span>*</span></div ><br>';
+                    out += "< div class="score" ><span>*</span></div ><br>";
                 }
                 out += '</div>';
                 out += '<div class="rdesc">'+data.reviews[key]['content']+'</div></div>';
